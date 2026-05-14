@@ -28,12 +28,16 @@ backdoor-detection-chip/
 2. 快速开始
 安装依赖
 pip install -r requirements.txt
+
 构建数据集
 python scripts/build_dataset.py --config configs/dataset_config.yaml
+
 训练模型
 python scripts/train_model.py --config configs/train_config.yaml
+
 运行推理
 python scripts/run_inference.py --model-dir models/codebert_chip_backdoor --file tests/samples/demo_bad.c
+
 启动桌面应用
 python scripts/run_desktop_app.py
 
