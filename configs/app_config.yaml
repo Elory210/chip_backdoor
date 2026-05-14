@@ -1,0 +1,8 @@
+model_dir: models/codebert_chip_backdoor
+report_dir: reports
+default_language: auto
+max_batch_files: 500
+context_window: 5
+high_risk_types:
+  - logic_tamper
+  - privilege_escalation
