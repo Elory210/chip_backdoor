@@ -10,6 +10,7 @@
 模块3：基于PyQt6的Windows桌面检测器
 
 1. 项目结构
+
 backdoor-detection-chip/
   configs/
   data/
@@ -26,22 +27,29 @@ backdoor-detection-chip/
   README.md
 
 2. 快速开始
-安装依赖
+
+2.1. 安装依赖
+
 pip install -r requirements.txt
 
-构建数据集
+2.2. 构建数据集
+
 python scripts/build_dataset.py --config configs/dataset_config.yaml
 
-训练模型
+2.3. 训练模型
+
 python scripts/train_model.py --config configs/train_config.yaml
 
-运行推理
+2.4. 运行推理
+
 python scripts/run_inference.py --model-dir models/codebert_chip_backdoor --file tests/samples/demo_bad.c
 
-启动桌面应用
+2.5. 启动桌面应用
+
 python scripts/run_desktop_app.py
 
-标签模式
+4. 标签模式
+
 language: verilog|vhdl|c|cpp
 
 backdoor_type: none|logic_tamper|privilege_escalation|data_exfiltration|instruction_hijack
@@ -54,7 +62,8 @@ scenario: fpga|asic|mcu|embedded
 
 has_backdoor: 0|1
 
-说明
+5. 说明
+
 默认配置使用快速验证集大小（1000个样本）。
 
 如需大规模数据生成，请增加 configs/dataset_config.yaml 中的 sample_count 参数。
