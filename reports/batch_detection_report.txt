@@ -1,0 +1,14 @@
+File: d:\STUDY\core\backdoor-detection-chip\tests\samples\demo_bad.c
+Has backdoor: True
+Confidence: 0.6000
+Type: privilege_escalation
+Risk: high
+Suspicious lines: [3, 7, 8]
+------------------------------------------------------------
+File: d:\STUDY\core\backdoor-detection-chip\tests\samples\demo_clean.v
+Has backdoor: True
+Confidence: 0.5025
+Type: none
+Risk: low
+Suspicious lines: []
+------------------------------------------------------------
